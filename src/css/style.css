@@ -12,12 +12,12 @@ nav{
     color: #fff;
     font-size: 30px;
     line-height: 60px;
-    padding-left: 390px;
+    padding-left: 180px;
 }
 
 .menu{
     float: left;
-    padding-left: 430px;
+    padding-left: 180px;
     
 }
 
@@ -26,7 +26,7 @@ nav{
     font-size: 16px;
     color: white;
     line-height: 60px;
-    margin-right: 40px;
+    margin-right: 25px;
     text-transform: uppercase;
 }
 
@@ -42,7 +42,7 @@ nav{
 }
 .title__container{
     float: left;
-    margin: 404px 0px 0px 432px;
+    margin: 404px 0px 0px 232px;
     color: #2c384a;
     text-align: center;
   
@@ -77,9 +77,9 @@ nav{
 
 .about_me_container h2{
     text-align: center;
-    width: 156px;
-    font-size: 33px;
-    margin: 110px auto 30px;
+    width: 100px;
+    font-size: 22px;
+    margin:10px auto;
     padding-bottom: 5px;
     text-transform: uppercase;
     
