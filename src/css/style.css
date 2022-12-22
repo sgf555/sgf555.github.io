@@ -12,12 +12,12 @@ nav{
     color: #fff;
     font-size: 30px;
     line-height: 60px;
-    padding-left: 180px;
+    padding-left: 160px;
 }
 
 .menu{
     float: left;
-    padding-left: 180px;
+    padding-left: 100px;
     
 }
 
@@ -42,7 +42,7 @@ nav{
 }
 .title__container{
     float: left;
-    margin: 404px 0px 0px 232px;
+    margin: 204px 0px 0px 232px;
     color: #2c384a;
     text-align: center;
   
@@ -77,31 +77,35 @@ nav{
 
 .about_me_container h2{
     text-align: center;
+   border-bottom: 4px solid #d17700; 
     width: 100px;
     font-size: 22px;
     margin:10px auto;
     padding-bottom: 5px;
     text-transform: uppercase;
-    
 }
+
 
 .about_me_container{
     width: 740px;
     margin: 0 auto;
     padding-bottom: 100px;
-}border:none; 
-background:#d17700;
-width:80px;
-.about_me_container img{
-    display: block;
-    margin: 0 auto;
+border: none; 
+background: #d17700;
+    
 }
+ 
+
+.about_me_container{ 
+  text-align: center; 
+}
+
 .about_me_container hr{
     height: 4px;
     border: none;
     background: #d17700;
-    width: 80px;
-    margin: 0 auto 60px;
+    width: 60px;
+    margin: 0 auto ;
 }
 
 .about_me_container p{
@@ -110,7 +114,7 @@ width:80px;
     
 }
 
-.about_me_container .secondText{
+.about_me_container_secondText{
     margin-top: 45px;
 }
 
@@ -176,12 +180,19 @@ width:80px;
 .clear{
     clear:both;
 }
+.mySelect{
+  display: block;
+    width: 890px;
+    height: 54px;
+    background: #999;
 
-.portfolio{
-    padding-top: 110px;
-    padding-bottom: 128px;
+}
+  .portfolio{
+  padding-top: 110px;
+  padding-bottom: 128px;
 }
 
+}
 .portfolio_container{
     width: 1170px;
     margin: 0 auto;
