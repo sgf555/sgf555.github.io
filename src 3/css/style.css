@@ -1,0 +1,313 @@
+/*
+a {
+    color: blue;
+    text-decoration: none;
+    padding: 20px;
+}
+*/
+a:active {
+    color: aqua;
+}
+/*активное состояние зажато или нажато*/
+
+a:hover {
+    background-color: forestgreen;
+}
+/*hover - отвечает за наведение, когда наведено на ссылку например там что-то меняется или что-то происходит*/
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #333;
+}
+
+
+.box:hover {
+    background-color: red;
+    width: 300px;
+}
+
+
+a:visited {
+    color: firebrick;
+}
+/* visited - создаем правило для ссылки которую мы уже посетили */
+input:focus {
+    border: 3px solid green;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+/* focus - создаем правило фокуса когда форма находится в фокусе меняем ей что-то как например как-то иначе подсвечиваем и др.*/
+/*
+li:first-child {
+    background: red;
+}
+*/
+/* first-child - первому элементу  */
+/*
+li:last-child {
+    background: green;
+}
+*/
+/* last-child -  последнему элементу */
+/*
+li:nth-child(3) {
+    background: blue;
+}
+*/
+/* nth-child - обращение к определенному номеру элемента */
+/*
+li:nth-child(even) {
+    background-color: brown;
+}
+*/
+/* even - обращение к каждому чётному элементу */
+/*
+li:nth-child(odd) {
+    background-color: aqua;
+}
+*/
+/* odd - обращение к каждому нечётному элементу */
+/*
+li:nth-child(3n) {
+    background-color: blue;
+}
+*/
+/* 3n - чтобы покрасить например каждый третий элемент можно каждый любой элемент 
+
+webref.ru 
+справочник по любому вопросу 
+*/
+
+/* псевдоэлементы - пишуться с двумя точками :: */
+
+
+p::first-line {
+    color: peachpuff;
+}
+/* ::first-line - изменение первой строки элемента */
+
+p::first-letter {
+    color: fuchsia;
+    font-size: 20px;
+}
+/* ::first-letter - изменение первой буквы в элементе */
+
+ul {
+    width: 30px;
+    margin: 50px;
+    font-size: 18px;
+}
+li {
+    margin-bottom: 30px;
+}
+
+li::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+/*    border-radius: 50%;*/
+    margin-right: 10px;
+}
+/* ::before - создает что-то перед элементом */
+/*content: ""; - обязательный атрибут без него работать не будут элементы;*/
+
+li::after {
+    content: "";
+
+}
+/* ::after - создает что-то после элемента 
+    
+*/
+li::before {
+    display: block;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    background-color: red;
+    transition: all 0.3s;
+}
+li:hover::before {
+    transform: scaleX(1);
+}
+body {
+    padding: 50px;
+}
+
+
+.box span {
+    display: block;
+    text-align: center;
+    margin-top: 90px;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: aqua;
+    animation-name: move;
+    
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+*/
+*  animation-direction - normal - по умолчанию
+                          reverse - анимация в обратную сторону
+                          alternate-reverse - зациклить задом наперет 
+                          alternate - зациклить
+                          
+                        */
+    animation-fill-mode: forwards;
+   animation-fill-mode: forwards; 
+                                                  
+    */
+    animation: move 1s linear reverse infinite, bg-color 2s infinite;
+*    универсальная запись  */
+*  animation-iteration-count: -  infinite;    
+*    transition: all 2s 0.1s  cubic-bezier(0,.84,1,.26);*/
+*    можно писать сокращённо */
+*    transition-duration: 1.5s;*/
+    * transition-duration: 
+*    transition-property: width, opacity;*/
+    * transition-property: width; - width; 
+    transition-delay: 0.1s;
+    transition-delay: 2s;  
+    
+    transition-timing-function: cubic-bezier(0,.84,1,.26);*/
+    transition-timing-function:ease;  
+                                ease-in - 
+                                ease-out - 
+                                ease-in-out - 
+                                
+    }
+.box:hover {
+    animation-play-state: paused;
+*    animation-play-state: paused; 
+   
+}
+
+
+.box:active {
+
+    background-color: antiquewhite;  
+    width: 300px;
+    opacity: 0;
+
+    margin-left: 500px;
+}
+
+@keyframes move {
+    from {
+        background: red;
+    }
+    10% {
+        background: white;
+    }
+    20% {
+        background: blue;
+    }
+    
+    to {
+        background: black;
+    }
+}
+*/
+@keyframes move {
+    from {
+        margin-left: 0;
+    }
+    
+    to {
+        margin-left: 200px;
+    }
+}
+
+
+@keyframes bg-color {
+    from {
+        background: red;
+    }
+    
+    to {
+        background: white;
+    }
+}
+
+@keyframes move {
+    0% {
+        background: red;
+    }
+    
+    100% {
+        background: black;
+    }
+}
+
+
+ 
+.wrapper {
+    display: flex;
+    text-transform: uppercase;
+    justify-content:flex-start;
+    align-items: flex-start;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease 0s;
+    
+}
+ translate; 
+.content__translate {
+    margin: 10px;
+    float: top;
+    width: 150px;
+    height: 150px;
+    background-color: #f13708;
+    text-align: center;
+    /* padding-top: 75px; */
+}
+.content__translate:hover {
+    transform: translate(50%, 10%)
+}
+.content__scale {
+    margin: 10px;
+    float: right;
+    width: 150px;
+    height: 150px;
+    background-color: #f13708;
+    text-align: center;
+}
+
+.content__scale:hover {
+    transform: scale(50% , 50% );
+}
+
+.content__rotate {
+    margin: 10px;
+    float: right;
+    width: 150px;
+    height: 150px;
+    background-color: #f13708;
+    text-align: center;
+}
+
+.content__rotate:hover {
+    transform: rotate(50deg );
+}
+
+
+
+.content__skew {
+    margin: 10px;
+    float: right;
+    width: 150px;
+    height: 150px;
+    background-color: #f13708;
+    text-align: center;
+}
+
+.content__skew:hover {
+    transform: skew(10deg, 0);
+}

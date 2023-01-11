@@ -1,0 +1,77 @@
+body {
+  padding: 50px;
+}
+.box span {
+  display: block;
+  text-align: center;
+  margin-top: 90px;
+}
+
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  background-color:azure;
+  animation-name: move;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+   animation-delay: 2s; 
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+   animation-name;
+     animation-duration - o.2s;
+     animation-timing-function:-ease;
+     animation-delay: - задержка
+     animation-iteration-count - infinite; 
+  
+     animation-direction: normal - reverse - alternate
+     normal - по умолчанию анимация идёт в одну сторону начинается сначало
+     reverse - проигрывать анимацию с конца
+     alternate - анимация едет в обе стороны 
+     animation-play-state: paused; - поставить в нужное время на паузу анимацию
+     animation-fill-mode: normal - по умолчанию
+                          forwards - анимация закончилась и всё остановилась
+                          backwards - тоже самое только вначале
+     
+     
+     
+      move 1s linear reverse infinite , bg-color 2s linear reverse infinite;
+     /*        name - duration - timing-function - delay - direction - iteration-count - fill-mode
+               имя  - скорость - функция отработки - задержка - место начала - сколько раз возпроизвести - где остановить
+     */
+}
+.box:hover {
+  animation-play-state: paused;
+}
+@keyframes move {
+  from {
+    
+    margin-left: 0;
+  }
+  to {
+    
+    margin-left: 200px;
+  }
+}
+@keyframes bg-color {
+  from {
+    background: red;
+  }
+  to {
+    background: black;
+  }
+}
+* Вот так как функция по сути создаётся анимация *
+@keyframes move-analog {
+  0% {
+
+  }
+  50% {
+
+  }
+  100% {
+
+  }
+}
