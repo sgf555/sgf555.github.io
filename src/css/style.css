@@ -77,9 +77,10 @@ nav{
 
 .about_me_container h2{
     text-align: center;
+    border-bottom: 2px solid black;
     width: 100px;
     font-size: 22px;
-    margin:10px auto;
+    margin: 10px auto;
     padding-bottom: 5px;
     text-transform: uppercase;
 }
@@ -94,9 +95,19 @@ nav{
 }
  
 
-.about_me_container{ 
-  text-align: center; 
+.about_me_container img{ 
+      display: block;
+     margin: 0 auto;
+      animation: show 1s;
 }
+
+@keyframes show{
+    from{
+      margin-left: -500px;  
+    }
+    to{
+       margin-left: 0;
+    }
 
 .about_me_container hr{
     height: 4px;
@@ -107,13 +118,13 @@ nav{
 }
 
 .about_me_container p{
-    margin-top: 24px;
+    margin-top: 30px;
     font-size: 17px;
     
 }
 
 .about_me_container_secondText{
-    margin-top: 45px;
+    margin-top: 15px;
 }
 
 .about_me_container a{
@@ -135,12 +146,10 @@ nav{
     background: url(../img/bg2.jpg) center/cover no-repeat;
 }
 .skills_container{
-    width: 1094px;
-    margin: 0 auto;
-    padding-top: 110px;
-    padding-bottom: 96px;
-}
-.skills_container h2{
+    width: 920px;
+    text-align: center;
+    }
+    .skills_container h2{
     text-align: center;
     width: 214px;
     font-size: 33px;
@@ -158,11 +167,14 @@ nav{
 }
 .skills_item{
     float: left;
-    width: 200px;
+    width: 230px;
     text-align: center;
-    margin: 0 36px;
+    
 }
-
+    .clear{
+        clear: left;
+    }
+    
 .skills_item img{
     margin-bottom: 40px;
     height: 40px;
@@ -176,7 +188,7 @@ nav{
     font-size: 16px;
 }
 .clear{
-    clear:both;
+    clear:left;
 }
 
 .mySelect{
@@ -334,7 +346,7 @@ nav{
 }
 
 .statistic{
-    background: url(../img/bg3.jpg) center/cover no-repeat;
+    background: url(../img/bg3.jpg) center/cover fixed no-repeat;
 }
 
 
