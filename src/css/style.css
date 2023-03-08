@@ -347,6 +347,7 @@ nav{
 
 .statistic{
     background: url(../img/bg3.jpg) center/cover fixed no-repeat;
+    max-width: 100%
 }
 
 
