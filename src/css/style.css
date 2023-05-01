@@ -291,7 +291,7 @@ nav{
      text-align: center;
     width: 358px;
     font-size: 43px;
-    margin: 0px auto 50px;
+    margin: 0px auto; 
     
 }
 .calculator_inner{
@@ -548,8 +548,7 @@ nav{
 }
 
 .contacts_social{
-    width: 422px;
-    margin: 0 auto;
+   margin: 0 auto;
     
 }
 
